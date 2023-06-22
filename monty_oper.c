@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 
 /**
  * f_add - function that adds to the stack
@@ -150,7 +150,7 @@ void f_mod(stack_t **head, unsigned int counter)
 		h = h->next;
 		len++;
 	}
-	if (leng < 2)
+	if (len < 2)
 	{
 		fprintf(stderr, "L%d: can't mod, stack too short\n", counter);
 		fclose(bus.file);
